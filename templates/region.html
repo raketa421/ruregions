@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href=" {%static 'css/styles.css' %}">
+
+
+</head>
+<body>
+
+
+<h2>{{name}}</h2>
+<h3>Список городов:</h3>
+{% for i in list%}
+<ul>
+    <li>{{i}}</li>
+</ul>
+{%endfor%}
+ 
+
+</body>
+</html>

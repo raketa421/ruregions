@@ -1,0 +1,89 @@
+html{
+    background-color:rgb(43, 41, 41);
+    font-family: sans-serif;
+  
+}
+/* Заголовок */
+h3,h2,h1,p,li,li span{
+    color:rgb(233, 229, 229);
+}
+
+
+.obl a{
+    text-decoration:none;
+}
+
+/* Линия */
+hr{
+display: block;
+  height: 1px;
+  border: 0px;
+  border-top: 2px solid #000000;
+  margin: 1em 0;
+  padding: 0;
+}
+
+button{
+  background-color:rgb(43,41,41);
+  padding:0px;
+  margin:0px;
+  border:none;
+  padding-block:0;
+  padding-inline:0;
+  cursor:pointer;
+}
+
+
+/* Размер изображения */
+.pic, img{
+    height:90px;
+    width:100px;
+}
+
+img{
+  height:90px;
+  width:160px;
+}
+
+/* Отступ */
+.objekt {
+    margin:25px;
+   
+    align-items: center;
+}
+
+.obl p{
+    color:rgb(55, 198, 255);
+    margin:0px;
+    text-align: center;
+    font-size:13px;
+}
+
+/* Кнопка поиска */
+.poiskButton {
+    width: 40px;
+    height: 36px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding:0px;
+    margin:0px;
+  }
+
+/* Строка поиска */
+  .poiskStr {
+    width: 250px;
+    height: 30px;
+  }
+
+
+.obl{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding-right:10px;
+
+}
+
+
+

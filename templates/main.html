@@ -1,0 +1,41 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href=" {%static 'css/styles.css' %}">
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+
+</head>
+<body>
+
+  <h1>Список регионов России и их городов</h1>
+  <div class="search">
+    <form action="search">
+     <input type="text" name="s" class="searchStr" placeholder="Поиск">
+     <button type="submit" class="searchButton">
+    </button>
+   </form>
+  </div>
+  
+  {% for letter, regions in grouped_regions.items %}
+    <h2>{{ letter }}</h2>
+  <div class = 'obl'>
+    {% for region in regions %}
+    <div class = 'objekt'>
+      {% with "flags/"|add:region|add:".jpg" as imgadress %}
+    <form action="region">
+      <button type="submit" name = 'reg' value = "{{region}}">
+
+        <img src="{%static imgadress %}" alt="Submit">
+        <p>{{region}}</p>
+    </button>
+    {%endwith%}
+    </form>
+  </div>
+  {%endfor%}
+</div>  
+{%endfor%}
+
+</body>
+</html>
